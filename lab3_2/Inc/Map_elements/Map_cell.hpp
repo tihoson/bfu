@@ -25,13 +25,14 @@ namespace Game {
 			
 			bool is_wall() const;
 			void set_wall();
+			
 			unsigned get_x() const;
 			unsigned get_y() const;
+			
 			std::shared_ptr<Player> get_player();
 			std::vector<std::shared_ptr<Item>>& get_items();
 			
 			char cell_char();
-			std::string info();
 
 		private:
 			std::shared_ptr<Player> player_;
